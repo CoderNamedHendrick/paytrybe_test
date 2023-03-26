@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:paytrybe_test/applicatioin/auth/auth_home/auth_home_notifier.dart';
-import 'package:paytrybe_test/applicatioin/core/trybe_view_model.dart';
+import 'package:paytrybe_test/application/auth/auth_home/auth_home_notifier.dart';
+import 'package:paytrybe_test/application/core/trybe_view_model.dart';
 import 'package:paytrybe_test/domain/auth/value_objects.dart';
 import 'package:paytrybe_test/keys.dart';
 import 'package:paytrybe_test/shared/constants.dart';
@@ -40,6 +40,7 @@ class _AuthHomeState extends ConsumerState<AuthHome> {
         ViewState.loading;
     return Scaffold(
       resizeToAvoidBottomInset: false,
+      backgroundColor: Theme.of(context).colorScheme.surface,
       body: SafeArea(
         child: AbsorbPointer(
           absorbing: isLoading,

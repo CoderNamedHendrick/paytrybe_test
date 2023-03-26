@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:paytrybe_test/applicatioin/auth/create_account/create_account_notifier.dart';
+import 'package:paytrybe_test/application/auth/create_account/create_account_notifier.dart';
 import 'package:paytrybe_test/domain/auth/value_objects.dart';
 import 'package:paytrybe_test/keys.dart';
 import 'package:paytrybe_test/presentation/auth/widgets/auth_widgets.dart';
@@ -8,7 +8,7 @@ import 'package:paytrybe_test/shared/theme/app_texts.dart';
 import 'package:paytrybe_test/shared/theme/sizing_extension.dart';
 import 'package:paytrybe_test/shared/utility.dart';
 
-import '../../../applicatioin/core/trybe_view_model.dart';
+import '../../../application/core/trybe_view_model.dart';
 import '../../../shared/constants.dart';
 import '../../../shared/widgets/widgets.dart';
 

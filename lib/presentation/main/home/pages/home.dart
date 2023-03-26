@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:paytrybe_test/shared/constants.dart';
@@ -52,7 +54,8 @@ class HomePage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: Constants.sectionHorizontalSpace.rw),
+                            SizedBox(
+                                width: Constants.sectionHorizontalSpace.rw),
                             Expanded(
                               child: SizedBox(
                                 height: 41.rh,

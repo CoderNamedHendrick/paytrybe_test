@@ -1,7 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:paytrybe_test/applicatioin/core/trybe_view_model.dart';
+import 'package:paytrybe_test/application/core/trybe_view_model.dart';
 import 'package:paytrybe_test/domain/core/exceptions.dart';
 import 'package:paytrybe_test/infrastructure/providers.dart';
 

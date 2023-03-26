@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_multi_formatter/flutter_multi_formatter.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:paytrybe_test/applicatioin/auth/select_code_notifier.dart';
-import 'package:paytrybe_test/applicatioin/core/trybe_view_model.dart';
+import 'package:paytrybe_test/application/auth/select_code_notifier.dart';
+import 'package:paytrybe_test/application/core/trybe_view_model.dart';
 import 'package:paytrybe_test/shared/constants.dart';
 import 'package:paytrybe_test/shared/theme/sizing_extension.dart';
 import 'package:paytrybe_test/shared/widgets/widgets.dart';

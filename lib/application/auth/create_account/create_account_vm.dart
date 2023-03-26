@@ -1,4 +1,4 @@
-import 'package:paytrybe_test/applicatioin/core/trybe_view_model.dart';
+import 'package:paytrybe_test/application/core/trybe_view_model.dart';
 import 'package:paytrybe_test/domain/auth/entities/create_acocunt.dart';
 import 'package:paytrybe_test/domain/core/exceptions.dart';
 
