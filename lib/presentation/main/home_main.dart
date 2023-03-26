@@ -10,6 +10,7 @@ import 'package:paytrybe_test/presentation/main/settings/pages/settings.dart';
 import 'package:paytrybe_test/presentation/main/transactions/pages/transactions.dart';
 import 'package:paytrybe_test/shared/theme/app_texts.dart';
 import 'package:paytrybe_test/shared/theme/assets_extension.dart';
+import 'package:paytrybe_test/shared/widgets/animated_indexed_stack.dart';
 
 class HomeMain extends ConsumerWidget {
   static const route = '/home-main';
@@ -27,7 +28,7 @@ class HomeMain extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
     int currentIndex = ref.watch(_bottomNavStateProvider);
     return Scaffold(
-      body: IndexedStack(
+      body: AnimatedIndexedStack(
         index: currentIndex,
         children: _pages,
       ),

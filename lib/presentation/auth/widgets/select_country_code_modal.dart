@@ -19,7 +19,11 @@ Future<CountryCode?> showSelectCountryBottomSheet(BuildContext context) async {
         top: Radius.circular(Constants.mediumRadius),
       ),
     ),
-    builder: (context) => const _SelectCountryCodeWidget(),
+    builder: (context) => Padding(
+      padding:
+          EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
+      child: const _SelectCountryCodeWidget(),
+    ),
   );
 }
 
@@ -104,6 +108,7 @@ class CountryTile extends StatelessWidget {
     required this.countryCode,
     this.onTap,
   });
+
   final String titleText;
   final String logoUrl;
   final String countryCode;

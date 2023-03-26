@@ -327,6 +327,7 @@ class _OTPTextFieldState extends State<OTPTextField> {
       controller: widget.controller,
       onChanged: widget.onChanged,
       validator: widget.validation,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       defaultPinTheme: PinTheme(
         width: Constants.otpSize,
         height: Constants.otpSize,

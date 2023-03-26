@@ -1,7 +1,7 @@
 // ignore_for_file: depend_on_referenced_packages
 
-import 'package:ficonsax/ficonsax.dart';
 import 'package:flutter/material.dart';
+import 'package:paytrybe_test/shared/widgets/arrow_circle.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:webview_flutter_android/webview_flutter_android.dart';
 import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
@@ -48,9 +48,9 @@ class _TrybeWebviewState extends State<TrybeWebview> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.surface,
         title: widget.title != null ? Text(widget.title!) : null,
-        leading: IconButton(
-          onPressed: Navigator.of(context).pop,
-          icon: const Icon(IconsaxOutline.arrow_circle_left),
+        centerTitle: true,
+        leading: ArrowCircle(
+          onTap: Navigator.of(context).pop,
         ),
       ),
       body: WebViewWidget(controller: controller),

@@ -1,4 +1,3 @@
-import 'package:ficonsax/ficonsax.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:paytrybe_test/application/auth/create_account/create_account_notifier.dart';
@@ -6,6 +5,7 @@ import 'package:paytrybe_test/domain/auth/value_objects.dart';
 import 'package:paytrybe_test/shared/mixins/m_state.dart';
 import 'package:paytrybe_test/shared/theme/app_texts.dart';
 import 'package:paytrybe_test/shared/theme/sizing_extension.dart';
+import 'package:paytrybe_test/shared/widgets/arrow_circle.dart';
 
 import '../../../shared/constants.dart';
 import '../widgets/auth_widgets.dart';
@@ -38,11 +38,10 @@ class _CreateAccountState extends ConsumerState<CreateAccount> with MState {
         .watch(createAccountNotifierProvider.select((value) => value.page))));
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          onPressed: () => ref
+        leading: ArrowCircle(
+          onTap: () => ref
               .read(createAccountNotifierProvider.notifier)
               .backOnTap(context),
-          icon: const Icon(IconsaxOutline.arrow_circle_left),
         ),
         title: const Text(AppBarTitle.createAccount),
         centerTitle: true,

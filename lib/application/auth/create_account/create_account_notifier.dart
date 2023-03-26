@@ -108,19 +108,19 @@ class CreateAccountNotifier extends StateNotifier<CreateAccountViewModel> {
 
   void firstAndLastNameOnChanged(String input) => state = state.copyWith(
         createAccountEntity: state.createAccountEntity.copyWith(
-          firstAndLastNames: FirstAndLastNames(input),
+          firstAndLastNames: FirstAndLastNames(input.trim()),
         ),
       );
 
   void emailAddressOnChanged(String input) => state = state.copyWith(
         createAccountEntity: state.createAccountEntity.copyWith(
-          emailAddress: EmailAddress(input),
+          emailAddress: EmailAddress(input.trim()),
         ),
       );
 
   void passwordOnChanged(String input) => state = state.copyWith(
         createAccountEntity: state.createAccountEntity.copyWith(
-          password: Password(input),
+          password: Password(input.trim()),
         ),
       );
 
