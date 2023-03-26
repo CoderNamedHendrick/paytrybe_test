@@ -29,7 +29,7 @@ void main() {
     await widgetTester.progressAnimationSafely();
     expect(find.text('Phone Number cannot be empty'), findsWidgets);
 
-    await signUpRobot.enterPhone('90561536');
+    await signUpRobot.enterPhone('90709715');
     await signUpRobot.pressGetStartedContinue();
     await widgetTester.progressAnimationSafely();
     expect(find.text('Please enter a valid phone number'), findsWidgets);
@@ -49,12 +49,16 @@ void main() {
         findsOneWidget);
     await widgetTester.progressAnimationSafely();
 
+    await widgetTester.tap(find.byKey(AKey.otpField));
     await signUpRobot.enterOtp('333333');
     await signUpRobot.pressVerifyPhoneContinue();
 
     await signUpRobot.enterFirstAndLastName('John Doe');
     await signUpRobot.enterEmail('jonnyboy@gmail.com');
     await signUpRobot.enterPassword('Password');
+
+    await signUpRobot.tapPasswordVisibility();
+    expect(find.text('Password'), findsNWidgets(2));
 
     await signUpRobot.tapCreateAccountContinue();
 

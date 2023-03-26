@@ -30,6 +30,7 @@ class SignUpRobot {
     final field = find.byKey(AKey.phoneNumber);
     expect(field, findsOneWidget);
 
+    await tester.tap(field);
     await tester.enterText(field, input);
     await tester.pumpAndSettle();
     await Future.delayed(waitDuration);
@@ -48,6 +49,7 @@ class SignUpRobot {
     final field = find.byKey(AKey.otpField);
     expect(field, findsOneWidget);
 
+    await tester.tap(field);
     await tester.enterText(field, input);
     await tester.pump();
     await Future.delayed(waitDuration);
@@ -70,6 +72,7 @@ class SignUpRobot {
     final field = find.byKey(AKey.firstAndLastName);
     expect(field, findsOneWidget);
 
+    await tester.tap(field);
     await tester.enterText(field, input);
     await tester.pumpAndSettle();
     await Future.delayed(waitDuration);
@@ -79,6 +82,7 @@ class SignUpRobot {
     final field = find.byKey(AKey.emailAddress);
     expect(field, findsOneWidget);
 
+    await tester.tap(field);
     await tester.enterText(field, input);
     await tester.pumpAndSettle();
     await Future.delayed(waitDuration);
@@ -88,6 +92,7 @@ class SignUpRobot {
     final field = find.byKey(AKey.password);
     expect(field, findsOneWidget);
 
+    await tester.tap(field);
     await tester.enterText(field, input);
     await tester.pumpAndSettle();
     await Future.delayed(waitDuration);
