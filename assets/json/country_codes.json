@@ -1,0 +1,32 @@
+[
+  {
+    "countryName": "Canada",
+    "countryCode": "CA",
+    "countryLogo": "assets/svgs/canada.svg"
+  },
+  {
+    "countryName": "Nigeria",
+    "countryCode": "NG",
+    "countryLogo": "assets/svgs/nigeria.svg"
+  },
+  {
+    "countryName": "Ghana",
+    "countryCode": "GH",
+    "countryLogo": "assets/svgs/ghana.svg"
+  },
+  {
+    "countryName": "Kenya",
+    "countryCode": "KE",
+    "countryLogo": "assets/svgs/kenya.svg"
+  },
+  {
+    "countryName": "England",
+    "countryCode": "GB",
+    "countryLogo": "assets/svgs/england.svg"
+  },
+  {
+    "countryName": "Rwanda",
+    "countryCode": "RW",
+    "countryLogo": "assets/svgs/rwanda.svg"
+  }
+]
